@@ -1,0 +1,57 @@
+#caja-p{
+    background-color: #0f3344;
+    height: 770px;
+}
+
+#caja-s{
+    background-color: #e6e6e6;
+    height: 650px;
+}
+
+#caja-3{
+    background-color: #0f3344;
+    height: 900px;
+}
+
+.effect{
+    transition: all 0.8s ease;
+}
+
+#tar-col:hover{
+    transform: scale(1.05);
+}
+
+#tar-uni:hover{
+    transform: scale(1.05);
+}
+
+#tar-cam:hover{
+    transform: scale(1.05);
+}
+
+#tar-net:hover{
+    transform: scale(1.05);
+}
+
+#tar-w:hover{
+    transform: scale(1.3);
+}
+
+#caja-4{
+    background-color: #e6e6e6;
+    height: 700px;
+}
+
+#caja-5{
+    background-color: #0f3344;
+    height: 870px;
+}
+
+#caja-6{
+    background-color: #e6e6e6;
+    height: 850px;
+}
+
+#avatar{
+    width: 150px;
+}
