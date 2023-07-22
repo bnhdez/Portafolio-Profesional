@@ -1,6 +1,12 @@
 #caja-p{
     background-color: #0f3344;
-    height: 770px;
+    height: 790px;
+}
+
+@media (max-width: 767.98px) {
+    .height-inicio {
+        min-height: 135vh;
+    }
 }
 
 #caja-s{
@@ -11,6 +17,12 @@
 #caja-3{
     background-color: #0f3344;
     height: 900px;
+}
+
+@media (max-width: 767.98px) {
+    .height-edu {
+        min-height: 190vh;
+    }
 }
 
 .effect{
@@ -39,12 +51,12 @@
 
 #caja-4{
     background-color: #e6e6e6;
-    height: 700px;
+    height: 600px;
 }
 
 #caja-5{
     background-color: #0f3344;
-    height: 870px;
+    height: 1350px;
 }
 
 #caja-6{
@@ -53,5 +65,16 @@
 }
 
 #avatar{
-    width: 150px;
+    max-width: 40%; 
+    height: auto; 
+    margin: 0 auto;
+}
+
+#pie{
+    background-color: #0f3344;
+    height: 200px;
+}
+
+#pie p{
+    color: #b1c2d3;
 }
