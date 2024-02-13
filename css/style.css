@@ -28,7 +28,7 @@
 
 @media (max-width: 767.98px) {
     .height-edu {
-        min-height: 190vh;
+        min-height: 250vh;
     }
 }
 
@@ -63,7 +63,13 @@
 
 #caja-5{
     background-color: #0f3344;
-    height: 1350px;
+    height: 1150px;
+}
+
+@media (max-width: 767.98px) {
+    #caja-5{
+        height: 50vh;
+    }
 }
 
 #caja-6{
