@@ -8,53 +8,68 @@
     <link rel="stylesheet" href="iconos/css/icons-profile.css">
 </head>
 <body>
-    <div class="container mt-5">
-        <div class="d-flex align-items-center gap-4">
-            <div class="bg-gray p-4">
-                <h1>Titulo</h1>
-                <h2>&lt;BH /&gt;</h2>
-                <h3>Titulo</h3>
+    <header class="navbar navbar-expand-lg bd-navbar sticky-top p-0">
+        <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap p-3">
+
+            <h2 class="m-0">&lt;BH /&gt;</h2>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                aria-controls="mobileMenu" aria-label="Toggle navigation">
+                <i class="icon-hamburger-menu"></i>
+            </button>
+
+            <div class="d-none d-lg-flex align-items-center gap-6">
+                <ul class="navbar-nav header-list gap-6">
+                    <li>
+                        <a href="">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="">Experiencia</a>
+                    </li>
+                    <li>
+                        <a href="">Contacto</a>
+                    </li>
+                </ul>
+
+                <div class="horizontal-divider"></div>
+
+                <div class="modes">
+                    <a href="">EN</a>
+                    <button type="button" class="btn btn-transparent"><i class="icon-night"></i></button>
+                </div>
+
+                <div class="horizontal-divider"></div>
+
+                <button type="button" class="btn btn-dark">Descargar CV</button>
             </div>
-            <div class="card">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, beatae praesentium ad totam reiciendis repellendus alias sunt sint neque ipsa unde magni iusto blanditiis voluptates vero quibusdam corrupti labore natus!</p>
-            </div>
-        </div>
-        <div class="d-flex mt-4">
-            <button type="button" class="btn btn-primary">Primary</button>
-            <button type="button" class="btn btn-secondary">Secondary</button>
-            <button type="button" class="btn btn-success">Success</button>
-            <button type="button" class="btn btn-danger">Danger</button>
-            <button type="button" class="btn btn-warning">Warning</button>
-            <button type="button" class="btn btn-info">Info</button>
-            <button type="button" class="btn btn-light">Light</button>
-            <button type="button" class="btn btn-dark">Download CV</button>
+
+            <div class="d-flex d-lg-none offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+                <div class="offcanvas-header">
+                    <h2 class="m-0">&lt;BH /&gt;</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-flex flex-column gap-4">
+                    <ul class="navbar-nav header-list">
+                        <li><a class="nav-link" href="">Proyectos</a></li>
+                        <li><a class="nav-link" href="">Experiencia</a></li>
+                        <li><a class="nav-link" href="">Contacto</a></li>
+                    </ul>
             
-            <button type="button" class="btn btn-link">Link</button>
-            <a type="button" class="link">Link</a>
-        </div>
-        <div class="d-flex mt-4">
-            <i class="icon-github"></i>
-            <i class="icon-twitter"></i>
-            <i class="icon-mail"></i>
-            <i class="icon-copy"></i>
-            <i class="icon-copy-right"></i>
-            <i class="icon-night"></i>
-            <i class="icon-day"></i>
-            <i class="icon-close"></i>
-            <i class="icon-hamburger-menu"></i>
-            <i class="icon-location"></i>
-            <i class="icon-external"></i>
-            <i class="icon-cuenta-de-usuario"></i>
-            <i class="icon-dot"></i>
-            <i class="icon-left-arrow"></i>
-            <i class="icon-right-arrow"></i>
-            <i class="icon-whatsapp"></i>
-            <i class="icon-linkedin"></i>
-        </div>
-        <div class="mt-4">
-            <span class="badge text-bg-secondary"><p>Experience</p></span>
-        </div>
-    </div>
+                    <div class="modes">
+                        <a href="">EN</a>
+                        <button type="button" class="btn btn-transparent">
+                            <i class="icon-night"></i>
+                        </button>
+                    </div>
+            
+                    <button type="button" class="btn btn-dark w-100 justify-content-center">Descargar CV</button>
+                </div>
+            </div>
+        </nav>
+    </header>
     <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script> -->
 </body>
 </html>
