@@ -99,3 +99,37 @@
         }
     }
 }
+
+.tecnologias{
+    background-color: $gray-50;
+
+    .technologies-grid {
+        display: grid;
+        gap: 3rem;
+        justify-items: center;
+        align-items: center;
+
+        // Grid adaptativo
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    
+        // Para pantallas grandes: 7 columnas
+        @media (min-width: 1200px) {
+            grid-template-columns: repeat(7, 1fr);
+        }
+    }
+
+    .tech-item {
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .tech-icon {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+    }
+}
