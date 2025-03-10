@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boris Hernández | Frontend Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/theme.min.css">
     <link rel="stylesheet" href="iconos/css/icons-profile.css">
 </head>
@@ -95,8 +96,8 @@
                                 <i class="icon-location"></i>
                                 <p >Santa Tecla, El Salvador</p>
                             </div>
-                            <div class="d-flex gap-2">
-                                <i class="icon-dot text-success"></i>
+                            <div class="d-flex gap-2 ms-1">
+                                <i class="icon-dot text-success" style="font-size: 0.625rem;"></i>
                                 <p>Disponible para nuevos proyectos</p>
                             </div>
                         </div>
@@ -250,6 +251,36 @@
                 </span>
                 <p class="text-center">Algunos de los proyectos notables que he construido:</p>
             </div>
+            <section class="splide" aria-label="Carrusel de Proyectos">            
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <a href=""><img src="img/projects/robot.png" alt="Robot"></a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href=""><img src="img/projects/wompi.png" alt="Wompi"></a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href=""><img src="img/projects/muebles.png" alt="Muebles Corp"></a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href=""><img src="img/projects/gifs.png" alt="Gifs App"></a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href=""><img src="img/projects/basura.jpg" alt="Reciclaje"></a>
+                            </li>
+                        <li class="splide__slide">
+                            <a href=""><img src="img/projects/globalia.png" alt="Globalia"></a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href=""><img src="img/projects/encriptador.png" alt="Encriptador"></a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href=""><img src="img/projects/secreto.png" alt="Juego Secreto"></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </div>
     </section>
 
@@ -404,7 +435,9 @@
                             <textarea class="form-control" id="mensaje" rows="4" placeholder="Hola..." required></textarea>
                         </div>
                     
-                        <button type="submit" class="btn btn-dark">Enviar</button>
+                        <div class="text-center text-md-start">
+                            <button type="submit" class="btn btn-dark">Enviar</button>
+                        </div>
                     </form>
                     <div class="d-flex d-md-none flex-column align-items-center contact-socials mt-4 gap-3">
                         <p>Visita mis otras redes sociales!</p>
@@ -434,5 +467,7 @@
     </footer>
 
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="js/carrusel.js"></script>
 </body>
 </html>
