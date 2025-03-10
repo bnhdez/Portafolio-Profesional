@@ -3,289 +3,495 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boris Profile</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Boris Hernández | Frontend Developer</title>
+    <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/theme.min.css">
+    <link rel="stylesheet" href="iconos/css/icons-profile.css">
 </head>
 <body>
-    <!-- Inicio -->
-    <div class="container-fluid height-inicio" id="caja-p">
-        <div class="row p-3">
-            <button class="btn btn-outline-light col-2 col-sm-1 bi-list" id="Menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"></button>
-            <h3 class="d-inline col-10 col-sm-10 text-center text-light display-6" id="nombre">Boris</h3>
-            <ul class="nav justify-content-center p-3 pt-5">
-                <li class="nav-item">
-                    <div id="a">
-                        <a class="nav-link text-dark " href="#datos-g">Datos Generales</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <div id="a">
-                    <a class="nav-link text-dark" href="#caja-s">Habilidades</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <div id="a">
-                    <a class="nav-link text-dark" href="#caja-3">Educación</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <div id="a">
-                    <a class="nav-link text-dark" href="#caja-4">Experiencia Laboral</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <div id="a">
-                    <a class="nav-link text-dark" href="#caja-5">Proyectos</a>
-                    </div>
-                </li>
-                <!--<li class="nav-item">
-                    <div id="a">
-                    <a class="nav-link text-dark" href="#caja-6">Contacto</a>
-                    </div>
-                </li>
-                -->
-            </ul>
-        </div>
-        <div class="container text-light" id="datos-g" style="padding-top: 60px;">
-            <h1 class="mt-3">Hola, soy Boris Hernández</h1>
-            <h2 class="display-6">Frontend Developer</h2>
-            <p class="lead mt-4">Soy un joven entusiasta y dedicado en busca de oportunidades para desarrollarme profesionalmente. Mi formación académica y mi pasión por aprender nuevas habilidades me han preparado para enfrentar desafíos y crecer en el mundo laboral. Aunque no cuento con una amplia experiencia en el campo laboral, estoy dispuesto a poner mi mejor esfuerzo y aportar mis conocimientos y habilidades en cualquier proyecto o tarea que se me presente.</p>
-            <div class="container mt-4">
-                <div class="row">
-                    <div class="col-12 col-sm-6 col-md-5 col-lg-6"><p class="lead mb-0"><strong>Edad: </strong>22 años</p></div>
-                    <div class="col-12 col-sm-6 col-md-5 col-lg-6"><p class="lead mb-0"><strong>País: </strong>El Salvador</p></div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-sm-6 col-md-5 col-lg-6"><p class="lead mb-0"><strong>Estado Civil: </strong>Soltero</p></div>
-                    <div class="col-12 col-sm-6 col-md-5 col-lg-6"><p class="lead mb-0"><strong>Idiomas: </strong>Español, Inglés</p></div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- HEADER -->
+    <header class="navbar navbar-expand-lg bd-navbar sticky-top p-0">
+        <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap primary-navigation p-3">
 
-    <!-- Habilidades -->
-    <div class="container-fluid d-flex flex-column justify-content-center" id="caja-s">
-        <div class="container">
-                <h1 id="habilidades">Habilidades Técnicas</h1>
-                <p class="display-6">Uso de herramientas virtuales tales como: NetBeans, Visual 
-                Studio, Android Studio, Autodesk Fusion 360, MySQL. Uso de 
-                herramientas tecnológicas como: Arduino.</p>
-                <p class="display-6">Manejo de programas Adobe: Photoshop, Illustrator, Premiere Pro.</p>
-                <p class="display-6">Manejo de lenguajes de programación como: JavaScript, React, Java, C#, C++, Kotlin.</p>
-        </div>
-    </div>
+            <h2 class="m-0">&lt;BH /&gt;</h2>
 
-    <!-- Educación -->
-    <div class="container-fluid d-flex flex-column justify-content-center height-edu" id="caja-3">
-        <div class="container">
-            <h1 class="text-light">Formación Educativa</h1>
-            <div class="row mt-4">
-                <div class="col-12 col-sm-6 mb-3 mb-sm-0 effect" id="tar-col">
-                    <div class="card border-light mb-3 bg-transparent text-light" >
-                        <div class="card-header border-light ">Colegio Salvadoreño Inglés - San Salvador, El Salvador</div>
-                        <div class="card-body d-flex flex-column justify-content-center" style="height: 124px;"">
-                            <h5 class="card-title"> Bachillerato General (2017 – 2020)</h5>
-                            <p class="card-text">Cursado con un promedio global de 88 (8.8).</p>
-                        </div>
-                    </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                aria-controls="mobileMenu" aria-label="Toggle navigation">
+                <i class="icon-hamburger-menu"></i>
+            </button>
+
+            <!-- Desktop -->
+            <div class="d-none d-lg-flex align-items-center gap-6">
+                <ul class="navbar-nav header-list gap-6">
+                    <li>
+                        <a href="#projects">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="#exp">Experiencia</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contacto</a>
+                    </li>
+                </ul>
+
+                <div class="horizontal-divider"></div>
+
+                <div class="modes">
+                    <a href="">EN</a>
+                    <button type="button" class="btn btn-transparent"><i class="icon-night"></i></button>
                 </div>
-                <div class="col-12 col-sm-6 mb-3 mb-sm-0 effect" id="tar-uni">
-                    <div class="card bg-transparent text-light border-light mb-3">
-                        <div class="card-header border-light">Universidad Evangélica de El Salvador – San Salvador, El Salvador</div>
-                        <div class="card-body d-flex flex-column justify-content-center" style="height: 124px;">
-                            <h5 class="card-title"> Ingeniería en Desarrollo de Contenidos Digitales y Robótica Aplicada (2021 – actualidad)</h5>
-                            <p class="card-text">Cuarto Año, Ciclo VII</p>
-                        </div>
-                    </div>
-                </div>
+
+                <div class="horizontal-divider"></div>
+
+                <a href="files/BorisHernandez-CV.pdf" download class="btn btn-dark">
+                    Descargar CV
+                </a>
             </div>
 
-            <h1 class="text-light display-6 mt-4">Educación Adicional</h1>
-            <div class="row mt-4">
-                <div class="col-12 col-sm-6 mb-3 mb-sm-0 effect" id="tar-col">
-                    <div class="card border-light mb-3 bg-transparent text-light">
-                        <div class="card-header border-light ">Udemy</div>
-                        <div class="card-body d-flex flex-column justify-content-center" style="height: 175px;">
-                            <h5 class="card-title">GIT + GitHub: Todo un sistema de control de versiones de cero</h5>
-                            <p class="card-text">Este curso proporciona las habilidades esenciales para la gestión de proyectos de programación y el control de
-                            versiones, lo que es fundamental en el desarrollo de software moderno.</p>
-                        </div>
-                    </div>
+            <!-- Mobil -->
+            <div class="d-flex d-lg-none offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+                <div class="offcanvas-header">
+                    <h2 class="m-0">&lt;BH /&gt;</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="col-12 col-sm-6 effect" id="tar-uni">
-                    <div class="card bg-transparent text-light border-light mb-3">
-                        <div class="card-header border-light">Kodigo</div>
-                        <div class="card-body d-flex flex-column justify-content-center" style="height: 175px;">
-                            <h5 class="card-title">Frontend Web Development Bootcamp</h5>
-                            <p class="card-text">Bootcamp enfocado al desarrollo web</p>
-                        </div>
+                <div class="offcanvas-body d-flex flex-column gap-4">
+                    <ul class="navbar-nav header-list">
+                        <li><a class="nav-link" href="#projects">Proyectos</a></li>
+                        <li><a class="nav-link" href="#exp">Experiencia</a></li>
+                        <li><a class="nav-link" href="#contact">Contacto</a></li>
+                    </ul>
+            
+                    <div class="modes">
+                        <a href="">EN</a>
+                        <button type="button" class="btn btn-transparent">
+                            <i class="icon-night"></i>
+                        </button>
                     </div>
+            
+                    <a href="files/BorisHernandez-CV.pdf" download class="btn btn-dark">
+                        Descargar CV
+                    </a>
                 </div>
             </div>
-            <div class="row mt-4">
-                <div class="col-12 col-sm-6 mb-3 mb-sm-0">
-                    <div class="card border-light mb-3 bg-transparent text-light effect" id="tar-cam">
-                        <div class="card-body d-flex flex-column justify-content-center" style="height: 136px;">
-                            <h5 class="card-title">Cambridge Assessment International Education</h5>
-                            <p class="card-text">International General Certificate of Secondary Education Grade C(c)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6">
-                    <div class="card bg-transparent text-light border-light mb-3 effect" id="tar-net">
-                        <div class="card-body">
-                            <h5 class="card-title">CCNA: Introduction to Networks</h5>
-                            <p class="card-text"> knowledge of networking including IP addressing, how 
-                            physical, data link protocols support Ethernet, can configure 
-                            connectivity between switches, routers and end devices to 
-                            provide access to local and remote resources
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="home">
+        <div class="max-80 mx-auto px-3">
+            <div class="row gap-4">
+                <div class="col-md-7 order-1 order-md-0">
+                    <div class="d-flex flex-column gap-4">
+                        <div class="d-flex flex-column gap-2">
+                            <h1>Hola, soy Boris</h1>
+                            <p class="mb-3">
+                                Soy un Frontend Developer con pasión por el diseño web y la creación de interfaces interactivas y responsivas. Con
+                                experiencia en React.js, Angular, TypeScript y .NET, me especializo en desarrollar soluciones eficientes y atractivas
+                                para la web. Actualmente, formo parte de Bitworks, donde he trabajado en el rediseño de plataformas digitales
+                                innovadoras.
+                            </p>
+                            <p>
+                                Me encanta combinar la creatividad con la tecnología, aplicando metodologías ágiles (Scrum) y las mejores prácticas de
+                                desarrollo para llevar cada proyecto al siguiente nivel.
                             </p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Trabajo -->
-    <div class="container-fluid d-flex flex-column justify-content-center" id="caja-4">
-        <div class="container d-flex flex-column justify-content-center">
-            <h1 class="text-center pb-5">Experiencia laboral</h1>
-            <div class="row mt-4 justify-content-center" >
-                <div class="col-sm-6 mb-3 mb-sm-0 ">
-                    <div class="card border-dark mb-3 text-bg-dark effect"  id="tar-w">
-                        <div class="card-header border-light">Customer Service Agent</div>
-                        <div class="card-body">
-                            <h5 class="card-title">Cricket Wireless (noviembre 2020 – enero 2021)</h5>
-                            <h5 class="card-title">AT&T UVERSE (junio 2022 – diciembre 2022)</h5>
-                            <p class="card-text">Servicios de atención al cliente, manejo de información personal,
-                            solución de problemas de conectividad y redes.</p>
+                        <div class="d-flex flex-column gap-2">
+                            <div class="d-flex gap-2">
+                                <i class="icon-location"></i>
+                                <p >Santa Tecla, El Salvador</p>
+                            </div>
+                            <div class="d-flex gap-2 ms-1">
+                                <i class="icon-dot text-success" style="font-size: 0.625rem;"></i>
+                                <p>Disponible para nuevos proyectos</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <a class="btn btn-transparent p-0" target="_blank" href="https://github.com/bnhdez">
+                                <i class="icon-github"></i>
+                            </a>
+                            <a class="btn btn-transparent p-0" target="_blank" href="https://www.linkedin.com/in/borishdez/">
+                                <i class="icon-linkedin"></i>
+                            </a>
+                            <a class="btn btn-transparent p-0" target="_blank" href="https://www.bento.me/bor1s">
+                                <i class="icon-cuenta-de-usuario"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
+                <div class="col-md-4 order-0 order-md-1 d-flex justify-content-md-end justify-content-center">
+                    <div class="d-flex justify-content-end align-items-center profile">
+                        <img src="/img/profile.jpg" alt="profile">
+                        <div class="bg-profile"></div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Tecnologias -->
+    <section class="tecnologias">
+        <div class="max-80 mx-auto px-3">
+            <div class="d-flex flex-column gap-3 align-items-center justify-content-center">
+                <span class="badge text-bg-secondary">
+                    <p>Tecnologias</p>
+                </span>
+                <p class="text-center" style="max-width: 26rem;">Estas son las herramientas y tecnologías en las que tengo experiencia y dominio:</p>
+            </div>
+            <div class="technologies-grid mt-4">
+                <div class="tech-item">
+                    <img src="/img/logos/javascript.svg" alt="Javascript" class="tech-icon">
+                    <p>Javascript</p>
+                </div>
+            
+                <div class="tech-item">
+                    <img src="/img/logos/jquery.svg" alt="JQuery" class="tech-icon">
+                    <p>JQuery</p>
+                </div>
+            
+                <div class="tech-item">
+                    <img src="/img/logos/css.svg" alt="CSS" class="tech-icon">
+                    <p>CSS</p>
+                </div>
+            
+                <div class="tech-item">
+                    <img src="/img/logos/sass.svg" alt="Sass/Scss" class="tech-icon">
+                    <p>Sass/Scss</p>
+                </div>
+            
+                <div class="tech-item">
+                    <img src="/img/logos/bootstrap.svg" alt="Bootstrap" class="tech-icon">
+                    <p>Bootstrap</p>
+                </div>
+            
+                <div class="tech-item">
+                    <img src="/img/logos/radzen.svg" alt="Radzen" class="tech-icon">
+                    <p>Radzen</p>
+                </div>
+            
+                <div class="tech-item">
+                    <img src="/img/logos/blazor.svg" alt="Blazor" class="tech-icon">
+                    <p>Blazor</p>
+                </div>
+                
+                <div class="tech-item">
+                    <img src="/img/logos/net.svg" alt="NET" class="tech-icon">
+                    <p>.NET</p>
+                </div>
+                
+                <div class="tech-item">
+                    <img src="/img/logos/c.svg" alt="C#" class="tech-icon">
+                    <p>C#</p>
+                </div>
+                
+                <div class="tech-item">
+                    <img src="/img/logos/typescript.svg" alt="TypeScript" class="tech-icon">
+                    <p>TypeScript</p>
+                </div>
+                
+                <div class="tech-item">
+                    <img src="/img/logos/react.svg" alt="React" class="tech-icon">
+                    <p>React</p>
+                </div>
+                
+                <div class="tech-item">
+                    <img src="/img/logos/angular.png" alt="Angular" class="tech-icon">
+                    <p>Angular</p>
+                </div>
+                
+                <div class="tech-item">
+                    <img src="/img/logos/java.svg" alt="Java" class="tech-icon">
+                    <p>Java</p>
+                </div>
+                
+                <div class="tech-item">
+                    <img src="/img/logos/springboot.svg" alt="Springboot" class="tech-icon">
+                    <p>Springboot</p>
+                </div>
+                
+                <div class="tech-item">
+                    <img src="/img/logos/mysql.svg" alt="MySQL" class="tech-icon">
+                    <p>MySQL</p>
+                </div>
+                
+                <div class="tech-item">
+                    <img src="/img/logos/postgresql.svg" alt="PostgreSQL" class="tech-icon">
+                    <p>MySql</p>
+                </div>
+                
+                <div class="tech-item">
+                    <img src="/img/logos/git.svg" alt="Git" class="tech-icon">
+                    <p>Git</p>
+                </div>
+                
+                <div class="tech-item">
+                    <img src="/img/logos/figma.svg" alt="Figma" class="tech-icon">
+                    <p>Figma</p>
+                </div>
+                
+                <div class="tech-item">
+                    <img src="/img/logos/canva.svg" alt="Canva" class="tech-icon">
+                    <p>Canva</p>
+                </div>
+                
+                <div class="tech-item">
+                    <img src="/img/logos/photoshop.svg" alt="Photoshop" class="tech-icon">
+                    <p>Photoshop</p>
+                </div>
+                
+                <div class="tech-item">
+                    <img src="/img/logos/ilustrador.svg" alt="Illustrator" class="tech-icon">
+                    <p>Illustrator</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Proyectos -->
-    <div class="container-fluid d-flex flex-column justify-content-center height-pro" id="caja-5">
-        <div class="container d-flex flex-column align-items-center">
-            <h1 class="text-light pb-5">Proyectos</h1>
-            <div class="container d-flex flex-column align-items-center pb-4">
-                <div id="carouselExampleCaptions" class="carousel slide w-100 carousel-dark">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+    <section class="proyectos" id="projects">
+        <div class="max-80 mx-auto px-3">
+            <div class="d-flex flex-column gap-3 align-items-center justify-content-center">
+                <span class="badge text-bg-secondary">
+                    <p>Proyectos</p>
+                </span>
+                <p class="text-center">Algunos de los proyectos notables que he construido:</p>
+            </div>
+            <section class="splide" aria-label="Carrusel de Proyectos">            
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <a href=""><img src="img/projects/robot.png" alt="Robot"></a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href=""><img src="img/projects/wompi.png" alt="Wompi"></a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href=""><img src="img/projects/muebles.png" alt="Muebles Corp"></a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href=""><img src="img/projects/gifs.png" alt="Gifs App"></a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href=""><img src="img/projects/basura.jpg" alt="Reciclaje"></a>
+                            </li>
+                        <li class="splide__slide">
+                            <a href=""><img src="img/projects/globalia.png" alt="Globalia"></a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href=""><img src="img/projects/encriptador.png" alt="Encriptador"></a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href=""><img src="img/projects/secreto.png" alt="Juego Secreto"></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section class="experiencia" id="exp">
+        <div class="max-80 mx-auto px-3">
+            <div class="d-flex flex-column gap-3 align-items-center justify-content-center">
+                <span class="badge text-bg-secondary">
+                    <p>Experiencia</p>
+                </span>
+                <p class="text-center mb-4" style="max-width: 26rem;">A continuación, un vistazo rápido a mis experiencias más recientes:</p>
+            </div>
+            <div class="d-flex flex-column gap-5">
+                <div class="card">
+                    <div class="w-md-25 order-0">
+                        <img src="img/logos/bitworks.png" alt="Bitworks">
                     </div>
-                    <div class="carousel-inner text-light">
-                        <div class="carousel-item active">
-                            <img src="img/calculadora.png" class="d-block w-100 img-fluid" alt="imagen1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/api.png" class="d-block w-100 img-fluid" alt="imagen2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/api2.png" class="d-block w-100 img-fluid" alt="imagen3">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/Dron.png" class="d-block w-100 img-fluid" alt="imagen4">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/personaje-game.png" class="d-block w-100 img-fluid" alt="imagen5">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/Diseño_app.png" class="d-block w-100 img-fluid" alt="imagen6">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/Robot.png" class="d-block w-100 img-fluid" alt="imagen7">
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                        </button>
+                    <div class="d-flex flex-column gap-3 w-md-50 order-2 order-md-1">
+                        <h5>Diseñador Web</h5>
+                        <ul>
+                            <li>Responsable del diseño y desarrollo de interfaces web responsivas en el frontend.</li>
+                            <li>Colaboro con equipos de backend bajo la metodología Scrum, completando tareas asignadas a través de sprints semanales y
+                            reuniones diarias.</li>
+                            <li>Mantenimiento y optimización de sitios web existentes, agregando nuevas funcionalidades o corrigiendo errores según
+                            fuera necesario.</li>
+                            <li>Trabajar en equipo con otros desarrolladores en un entorno Ágil.</li>
+                        </ul>
                     </div>
+                    <div class="w-md-25 order-1 order-md-2">
+                        <p class="text-md-end">Jul 2024 - Presente</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="d-flex w-md-25 order-0">
+                        <div class="d-flex align-items-center justify-content-start h-fit gap-3">
+                            <img src="img/logos/att.png" class="callcenter" alt="AT&T">
+                            <div class="horizontal-divider"></div>
+                            <img src="img/logos/tp.png" class="tp" alt="Teleperformance">
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column gap-3 w-md-50 order-2 order-md-1">
+                        <h5>Customer Service Agent</h5>
+                        <ul>
+                            <li>Gestión de información personal y resolución de problemas de conectividad y redes.</li>
+                            <li>Atendí consultas y quejas telefónicas siguiendo los procedimientos operativos estándar.</li>
+                            <li>Brindé información sobre productos a los clientes, respondiendo sus preguntas y resolviendo sus inquietudes</li>
+                        </ul>
+                    </div>
+                    <div class="w-md-25 order-1 order-md-2">
+                        <p class="text-md-end">Jun 2022 - Dic 2022</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="d-flex w-md-25 order-0">
+                        <div class="d-flex align-items-center justify-content-start h-fit gap-3">
+                            <img src="img/logos/cricket.png" class="callcenter" alt="Cricket Wireless">
+                            <div class="horizontal-divider"></div>
+                            <img src="img/logos/tp.png" class="tp" alt="Teleperformance">
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column gap-3 w-md-50 order-2 order-md-1">
+                        <h5>Customer Service Agent</h5>
+                        <ul>
+                            <li>Desarrollé sólidas habilidades de comunicación al interactuar con clientes de diversos antecedentes</li>
+                            <li>Apliqué técnicas de resolución de problemas para abordar y solucionar rápidamente las quejas de los clientes de manera
+                            profesional.</li>
+                            <li>Procesé pagos de manera eficiente, proporcionando recibos detallados a los clientes.</li>
+                        </ul>
+                    </div>
+                    <div class="w-md-25 order-1 order-md-2">
+                        <p class="text-md-end">Jun 2022 - Dic 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contacto" id="contact">
+        <div class="max-80 mx-auto px-3">
+            <div class="d-flex flex-column gap-3 align-items-center justify-content-center">
+                <span class="badge text-bg-secondary">
+                    <p>Contacto</p>
+                </span>
+                <p class="text-center mb-4" style="max-width: 44rem;">No dudes en comunicarte conmigo si estás buscando un desarrollador, tienes alguna consulta o simplemente quieres
+                conectarte.</p>
+            </div>
+            <div class="row justify-content-center gap-md-4">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <div class="d-flex flex-column gap-6">
+
+                        <div class="d-flex flex-column align-items-center gap-md-3">
+                            <div class="d-flex flex-column gap-3 contact-copy">
+                                <div class="d-flex align-items-center gap-3">
+                                    <i class="icon-linkedin"></i>
+                                    <h2 class="m-0">www.linkedin.com/in/borishdez</h2>
+                                    <button class="btn btn-transparent copy-btn p-0" data-copy="https://www.linkedin.com/in/borishdez">
+                                        <i class="icon-copy"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column gap-3 contact-copy">
+                                <div class="d-flex align-items-center gap-3">
+                                    <i class="icon-mail" style="font-size: 1.5rem;"></i>
+                                    <h2 class="m-0">borisnandez93@gmail.com</h2>
+                                    <button class="btn btn-transparent copy-btn p-0" data-copy="borisnandez93@gmail.com">
+                                        <i class="icon-copy"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column gap-3 contact-copy">
+                                <div class="d-flex align-items-center gap-3">
+                                    <i class="icon-whatsapp" style="font-size: 2.25rem;"></i>
+                                    <h2 class="m-0">+503 6317-3116</h2>
+                                    <button class="btn btn-transparent copy-btn p-0" data-copy="+50363173116">
+                                        <i class="icon-copy"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-none d-md-flex flex-column align-items-center contact-socials gap-3">
+                            <p>Visita mis otras redes sociales!</p>
+                            <div class="d-flex gap-2">
+                                <a class="btn btn-transparent p-0" target="_blank" href="https://www.bento.me/bor1s">
+                                    <i class="icon-cuenta-de-usuario"></i>
+                                </a>
+                                <a class="btn btn-transparent p-0" target="_blank" href="https://github.com/bnhdez">
+                                    <i class="icon-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <form class="contact-form px-4 py-md-4 py-3" method="POST" id="form">
+
+                        <input type="hidden" name="access_key" value="d90b6c84-07d1-453b-97ce-4e4d8bf5246d">
+
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" name="name" class="form-control" id="nombre" placeholder="Nombre Completo" required>
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">Correo</label>
+                            <input type="email" name="email" class="form-control" id="correo" placeholder="email@correo.com" required>
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Comentario o mensaje</label>
+                            <textarea class="form-control" name="message" id="mensaje" rows="4" placeholder="Hola..." required></textarea>
+                        </div>
+                        <div id="result" class="mb-3"></div>
+                    
+                        <div class="text-center text-md-start">
+                            <button type="submit" class="btn btn-dark">Enviar</button>
+                        </div>
+                    </form>
+
+                    <div class="d-flex d-md-none flex-column align-items-center contact-socials mt-4 gap-3">
+                        <p>Visita mis otras redes sociales!</p>
+                        <div class="d-flex gap-2">
+                            <a class="btn btn-transparent p-0" href="https://www.bento.me/bor1s">
+                                <i class="icon-cuenta-de-usuario"></i>
+                            </a>
+                            <a class="btn btn-transparent p-0" href="https://github.com/bnhdez">
+                                <i class="icon-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="toast-container">
+        <div id="copyToast" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive"
+            aria-atomic="true" data-bs-delay="2500" data-bs-autohide="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    ¡Copiado al portapapeles!
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Formulario -->
-    <!--
-    <div class="container-fluid d-flex flex-column justify-content-center" id="caja-6">
-        <div class="container">
-            <h1 class="pb-4">Contactame</h1>
-            <form class="row g-3">
-                <div class="col-md-6">
-                    <input type="text" class="form-control" id="inputName" placeholder="Nombre">
-                </div>
-                <div class="col-md-6">
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Correo">
-                </div>
-                <div class="col-12">
-                    <input type="text" class="form-control" id="inputAsunto" placeholder="Asunto">
-                </div>
-                <div class="form-floating">
-                    <textarea class="form-control" placeholder="Mensaje" id="floatingTextarea2" style="height: 100px"></textarea>
-                    <label for="floatingTextarea2">Mensaje</label>
-                </div>
-                <div class="col-12 justify-content-center d-grid gap-2 d-md-flex pt-4">
-                    <button type="submit" class="btn btn-secondary">Enviar</button>
-                </div>
-            </form>
-        </div>
-    </div>
-    -->
 
-    <!-- footer -->
     <footer>
-        <div class="container-fluid d-flex justify-content-center flex-column" id="pie">
-            <div class="container text-light text-center">
-                <p class="lead"><i class="bi bi-c-circle"></i> 2024 Derechos Reservados. Diseño y código: Boris Hernández</p>
-            </div>
+        <div class="d-flex justify-content-center align-items-center gap-1">
+            <i class="icon-copy-right"></i>
+            <p>2025</p>
+            <div class="horizontal-divider"></div>
+            <p>
+                Diseño y <a target="_blank" href="https://github.com/bnhdez/Portafolio-Profesional.git">código</a> por Boris Hernández
+            </p>
         </div>
     </footer>
 
-    <!-- Sidebar -->
-    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Información de Contacto</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <div class="container-fluid d-flex flex-column justify-content-center align-items-center p-3">
-                <img src="img/profile.png" id="avatar" alt="avatar" style="border-radius: 50%;">
-            </div>
-            <ul>
-                <li>Telefono: (+503) 6317-3116</li>
-                <li>Correo: borisnandez93@gmail.com</li>
-            </ul>
-            <div class="d-grid gap-2">
-                <a class="btn btn-secondary" type="button" href="https://bento.me/bor1s" target="_blank">Redes Sociales</a>
-            </div>
-            <div class="row text-center m-4">
-                <div class="col">
-                    <a href="https://github.com/bnhdez" target="_blank"><img src="img/github.png" class="img-fluid" alt="linkedin"></a>
-                </div>
-                <div class="col">
-                    <a href="https://www.linkedin.com/in/boris-hernandez-8505b9295" target="_blank"><img src="img/linkedin.png" class="img-fluid" alt="linkedin"></a>
-                </div>
-                <div class="col">
-                    <a href="https://www.tinkercad.com/users/cY9T9vViNPb" target="_blank"><img src="img/bio-sensor.png" class="img-fluid" alt="linkedin"></a>
-                </div>
-            </div>
-        </div>
-    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="js/carrusel.js"></script>
+    <script src="js/diseño.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
