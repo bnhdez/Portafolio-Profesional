@@ -423,7 +423,7 @@
                 </div>
 
                 <div class="col-md-5">
-                    <form class="contact-form px-4 py-md-4 py-3" action="https://api.web3forms.com/submit" method="POST" id="form">
+                    <form class="contact-form px-4 py-md-4 py-3" method="POST" id="form">
 
                         <input type="hidden" name="access_key" value="d90b6c84-07d1-453b-97ce-4e4d8bf5246d">
 
@@ -440,14 +440,13 @@
                         <div class="mb-3">
                             <label for="mensaje" class="form-label">Comentario o mensaje</label>
                             <textarea class="form-control" name="message" id="mensaje" rows="4" placeholder="Hola..." required></textarea>
-                            <input type="hidden" name="redirect" value="https://web3forms.com/success">
                         </div>
+                        <div id="result" class="mb-3"></div>
                     
                         <div class="text-center text-md-start">
                             <button type="submit" class="btn btn-dark">Enviar</button>
                         </div>
                     </form>
-                    <div id="result"></div>
 
                     <div class="d-flex d-md-none flex-column align-items-center contact-socials mt-4 gap-3">
                         <p>Visita mis otras redes sociales!</p>
@@ -492,5 +491,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="js/carrusel.js"></script>
     <script src="js/diseño.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,5 +1,7 @@
 const form = document.getElementById('form');
 const result = document.getElementById('result');
+const navigation = document.querySelector(".primary-navigation");
+const navigationHeight = navigation.offsetHeight;
 
 form.addEventListener('submit', function(e) {
     const formData = new FormData(form);
@@ -38,3 +40,8 @@ form.addEventListener('submit', function(e) {
             }, 3000);
         });
 });
+
+document.documentElement.style.setProperty(
+    "--scroll-padding",
+    navigationHeight + "px"
+);
