@@ -90,6 +90,18 @@ ol,ul{
     margin: 0;
 }
 
+header{
+    i{
+        font-size: 0.875rem;
+
+        &::before{
+            margin: 0;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+    }
+}
+
 @media (max-width:768px){
     header{
         border-bottom: 1px solid $gray-100;

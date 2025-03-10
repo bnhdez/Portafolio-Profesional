@@ -419,26 +419,32 @@
                 </div>
 
                 <div class="col-md-5">
-                    <form class="contact-form px-4 py-md-4 py-3">
+                    <form class="contact-form px-4 py-md-4 py-3" action="https://api.web3forms.com/submit" method="POST" id="form">
+
+                        <input type="hidden" name="access_key" value="d90b6c84-07d1-453b-97ce-4e4d8bf5246d">
+
                         <div class="mb-3">
                             <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Nombre Completo" required>
+                            <input type="text" name="name" class="form-control" id="nombre" placeholder="Nombre Completo" required>
                         </div>
                     
                         <div class="mb-3">
                             <label for="correo" class="form-label">Correo</label>
-                            <input type="email" class="form-control" id="correo" placeholder="email@correo.com" required>
+                            <input type="email" name="email" class="form-control" id="correo" placeholder="email@correo.com" required>
                         </div>
                     
                         <div class="mb-3">
                             <label for="mensaje" class="form-label">Comentario o mensaje</label>
-                            <textarea class="form-control" id="mensaje" rows="4" placeholder="Hola..." required></textarea>
+                            <textarea class="form-control" name="message" id="mensaje" rows="4" placeholder="Hola..." required></textarea>
+                            <input type="hidden" name="redirect" value="https://web3forms.com/success">
                         </div>
                     
                         <div class="text-center text-md-start">
                             <button type="submit" class="btn btn-dark">Enviar</button>
                         </div>
                     </form>
+                    <div id="result"></div>
+
                     <div class="d-flex d-md-none flex-column align-items-center contact-socials mt-4 gap-3">
                         <p>Visita mis otras redes sociales!</p>
                         <div class="d-flex gap-2">
