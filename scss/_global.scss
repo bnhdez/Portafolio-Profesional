@@ -183,3 +183,18 @@
         }
     }
 }
+
+.contacto{
+    .contact-copy{
+        i{
+            font-size: 1.688rem;
+        }
+    }
+
+    .contact-socials{
+        i{
+            color: $gray-600;
+            font-size: 1.25rem;
+        }
+    }
+}
