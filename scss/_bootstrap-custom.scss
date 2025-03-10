@@ -78,8 +78,25 @@
 }
 
 .offcanvas {
-    .offcanvas-header {
-        border-bottom: 1px solid $gray-100;
+    &.show {
+        visibility: visible;
+        transform: translateX(0);
+        height: 100vh;
+
+        .offcanvas-header {
+            border-bottom: 1px solid $gray-100;
+        }
+
+        .offcanvas-body {
+            height: 100%;
+            overflow-y: auto;
+        }
+    }
+}
+
+@media (min-width: 991.98px) {
+    .offcanvas {
+        display: none;
     }
 }
 

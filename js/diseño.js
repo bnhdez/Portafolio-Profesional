@@ -30,3 +30,15 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+$(document).ready(function () {
+    const $offcanvas = $("#mobileMenu");
+
+    $offcanvas.on("shown.bs.offcanvas", function () {
+        $(this).css("display", "block");
+    });
+
+    $offcanvas.on("hidden.bs.offcanvas", function () {
+        $(this).css("display", "none");
+    });
+});
