@@ -198,3 +198,46 @@
         }
     }
 }
+
+.toast-container {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 9999;
+    pointer-events: none; // Evita bloquear clics detrás del toast
+
+    .toast {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+        width: fit-content;
+        max-width: 100%; // Asegura que no se desborde en móviles
+        pointer-events: all;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .toast.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .toast.hide {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+// Media Query para pantallas pequeñas
+@media (max-width: 768px) {
+    .toast-container {
+        right: 1rem;
+        left: 1rem; // Añadimos margen lateral para evitar que se pegue a los bordes
+    }
+
+    .toast {
+        width: 100%; // Ocupará el ancho completo del contenedor
+        max-width: 100%; // Máximo ancho en pantallas pequeñas
+        font-size: 0.85rem;
+    }
+}
