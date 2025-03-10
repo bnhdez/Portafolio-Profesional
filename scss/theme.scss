@@ -108,3 +108,15 @@ section{
 p{
     margin-bottom: 0;
 }
+
+footer{
+    background-color: $gray-50;
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    .horizontal-divider{
+        color: $gray-600;
+        height: 1rem;
+    }
+}
