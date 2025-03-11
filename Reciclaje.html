@@ -81,35 +81,38 @@
     </header>
 
     <!-- Robot -->
-    <section class="gifs-app">
+    <section class="encriptador">
         <div class="max-80 mx-auto px-3">
             <div class="row gap-4 gap-md-0 d-flex justify-content-around">
                 <div class="col-md-6 d-flex align-items-center justify-content-center">
-                    <img src="img/projects/gifs.png" class="img-fluid shadow" alt="GifsApp">
+                    <img src="img/projects/reciclaje.png" class="img-fluid shadow" alt="Reciclaje">
                 </div>
                 <div class="col-md-6 d-flex align-items-center justify-content-center">
-                    <img src="img/projects/Gifs2.png" class="img-fluid shadow" alt="GifsApp">
+                    <img src="img/projects/reciclaje-data.png" class="img-fluid shadow" alt="Graph">
                 </div>
             </div>
 
             <div class="row mt-5">
                 <div class="col-md-3">
-                    <h2>Gifs App</h2>
+                    <h2>Detección de Basura - Python</h2>
                 </div>
                 <div class="col-md-9">
-                    <p class="mb-2"><strong>Gifs App</strong> es una aplicación desarrollada en <strong>Angular</strong> que permite buscar y visualizar
-                        <strong>GIFs</strong> utilizando la <strong>API de GIPHY</strong>. Los usuarios pueden realizar búsquedas de GIFs y
-                        ver los resultados de forma dinámica. Además, la aplicación utiliza <strong>localStorage</strong> para guardar un
-                        historial de búsquedas, lo que permite a los usuarios acceder rápidamente a sus consultas anteriores.</p>
+                    <p class="mb-2">Aplicación avanzada desarrollada en
+                        <strong>Python</strong> que utiliza visión por computadora para detectar y clasificar residuos en tiempo real. La
+                        interfaz gráfica fue construida utilizando <strong>Tkinter</strong>, mientras que el procesamiento de imágenes y la
+                        detección de objetos se realiza mediante el uso de modelos entrenados en <strong>Roboflow</strong> para la
+                        identificación precisa de diferentes tipos de basura, como plástico, vidrio, metal, papel y otros.</p>
                     
-                    <p class="mb-2">El proyecto hace uso de <strong>Angular</strong> para la creación de la interfaz y la lógica del frontend,
-                        aprovechando su arquitectura de componentes y servicios. La integración con la <strong>API de GIPHY</strong> se
-                        realiza a través de llamadas HTTP para obtener los GIFs en tiempo real. El uso de <strong>localStorage</strong>
-                        facilita la persistencia del historial de búsquedas, proporcionando una experiencia de usuario más personalizada y
-                        eficiente.</p>
+                    <p class="mb-2">El sistema captura imágenes desde una cámara en vivo, las envía a la plataforma <strong>Roboflow</strong> para la
+                        detección de residuos, y luego muestra los resultados en la interfaz. Los modelos fueron entrenados previamente en
+                        Roboflow, lo que permite realizar clasificaciones precisas en tiempo real. Los resultados de las clasificaciones,
+                        como el conteo de residuos detectados, se almacenan en una base de datos <strong>SQL Server</strong>, y el sistema
+                        permite al usuario consultar estadísticas y visualizar un historial de las clasificaciones realizadas. Además, la
+                        aplicación ofrece opciones para descargar imágenes y resultados, todo integrado en una solución fácil de usar y
+                        completamente responsiva para diversos dispositivos.</p>
 
-                    <a href="https://github.com/bnhdez/Gifs-App.git" target="_blank"><i class="icon-github"></i></a>
-                    <a href="https://bnhdez.github.io/Gifs-App/" target="_blank"><i class="icon-external"></i></a>
+                    <a href="https://github.com/bnhdez/Basura-Python.git" target="_blank"><i
+                            class="icon-github"></i></a>
                 </div>
             </div>
         </div>
