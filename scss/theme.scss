@@ -138,3 +138,20 @@ footer{
         height: 1rem;
     }
 }
+
+.video {
+    iframe {
+        border-radius: 8px;
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+ul{
+    list-style: disc;
+    color: $gray-600;
+}

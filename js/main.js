@@ -1,3 +1,8 @@
+$('a[href="#"]').on('click', function (e) {
+    e.preventDefault();
+});
+
+
 (function ($) {
     // FormHandler module for managing form submission and API interaction
     const FormHandler = (function () {
