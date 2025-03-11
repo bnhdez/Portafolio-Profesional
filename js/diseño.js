@@ -2,7 +2,7 @@
     // Navbar module for handling scroll behavior
     const NavbarModule = (function () {
         const $navbar = $('.navbar');
-        const scrollThreshold = 10; // Threshold for adding/removing 'scrolled' class
+        const scrollThreshold = 50; // Threshold for adding/removing 'scrolled' class
 
         // Private method to handle scroll behavior
         function handleScroll() {
@@ -24,7 +24,7 @@
         // Public method to initialize the module
         function init() {
             if ($navbar.length) {
-                $(window).on('scroll', debounce(handleScroll, 100));
+                $(window).on('scroll', handleScroll);
             } else {
                 console.warn('NavbarModule: .navbar element not found.');
             }
