@@ -235,7 +235,9 @@ const Home = () => {
                         {/* Bitworks */}
                         <div className="card">
                             <div className="w-md-25 order-0">
-                                <img src="/img/logos/bitworks.png" alt="Bitworks" />
+                                <div className="logos-wrapper">
+                                    <img src="/img/logos/bitworks.png" alt="Bitworks" />
+                                </div>
                             </div>
                             <div className="d-flex flex-column gap-3 w-md-50 order-2 order-md-1">
                                 <h5>{t.experience.jobs[0].role}</h5>
@@ -253,7 +255,7 @@ const Home = () => {
                         {/* AT&T */}
                         <div className="card">
                             <div className="d-flex w-md-25 order-0">
-                                <div className="d-flex align-items-center justify-content-start h-fit gap-3">
+                                <div className="h-fit gap-3 logos-wrapper">
                                     <img src="/img/logos/att.png" className="callcenter" alt="AT&T" />
                                     <div className="horizontal-divider"></div>
                                     <img src="/img/logos/tp.png" className="tp" alt="Teleperformance" />
@@ -275,7 +277,7 @@ const Home = () => {
                         {/* Cricket */}
                         <div className="card">
                             <div className="d-flex w-md-25 order-0">
-                                <div className="d-flex align-items-center justify-content-start h-fit gap-3">
+                                <div className="h-fit gap-3 logos-wrapper">
                                     <img src="/img/logos/cricket.png" className="callcenter" alt="Cricket Wireless" />
                                     <div className="horizontal-divider"></div>
                                     <img src="/img/logos/tp.png" className="tp" alt="Teleperformance" />
