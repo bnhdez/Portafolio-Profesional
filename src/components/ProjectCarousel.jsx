@@ -24,28 +24,28 @@ const ProjectCarousel = () => {
         <section className="splide" aria-label="Carrusel de Proyectos">
             <Splide options={options}>
                 <SplideSlide>
-                    <Link to="/robot"><img src="/img/projects/robot.png" alt="Robot" /></Link>
+                    <Link to="/robot"><img src="img/projects/robot.png" alt="Robot" /></Link>
                 </SplideSlide>
                 <SplideSlide>
-                    <Link to="/wompi"><img src="/img/projects/wompi.png" alt="Wompi" /></Link>
+                    <Link to="/wompi"><img src="img/projects/wompi.png" alt="Wompi" /></Link>
                 </SplideSlide>
                 <SplideSlide>
-                    <Link to="/muebles-corp"><img src="/img/projects/muebles.png" alt="Muebles Corp" /></Link>
+                    <Link to="/muebles-corp"><img src="img/projects/muebles.png" alt="Muebles Corp" /></Link>
                 </SplideSlide>
                 <SplideSlide>
-                    <Link to="/gifs-app"><img src="/img/projects/gifs.png" alt="Gifs App" /></Link>
+                    <Link to="/gifs-app"><img src="img/projects/gifs.png" alt="Gifs App" /></Link>
                 </SplideSlide>
                 <SplideSlide>
-                    <Link to="/reciclaje"><img src="/img/projects/basura.jpg" alt="Reciclaje" /></Link>
+                    <Link to="/reciclaje"><img src="img/projects/basura.jpg" alt="Reciclaje" /></Link>
                 </SplideSlide>
                 <SplideSlide>
-                    <Link to="/globalia"><img src="/img/projects/globalia.png" alt="Globalia" /></Link>
+                    <Link to="/globalia"><img src="img/projects/globalia.png" alt="Globalia" /></Link>
                 </SplideSlide>
                 <SplideSlide>
-                    <Link to="/encriptador"><img src="/img/projects/encriptador.png" alt="Encriptador" /></Link>
+                    <Link to="/encriptador"><img src="img/projects/encriptador.png" alt="Encriptador" /></Link>
                 </SplideSlide>
                 <SplideSlide>
-                    <Link to="/juego-secreto"><img src="/img/projects/secreto.png" alt="Juego Secreto" /></Link>
+                    <Link to="/juego-secreto"><img src="img/projects/secreto.png" alt="Juego Secreto" /></Link>
                 </SplideSlide>
             </Splide>
         </section>

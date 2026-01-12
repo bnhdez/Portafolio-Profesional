@@ -11,7 +11,7 @@ const JuegoSecreto = () => {
             <div className="max-80 mx-auto px-3">
                 <div className="row gap-4 gap-md-0 d-flex justify-content-around">
                     <div className="col-12 d-flex align-items-center justify-content-center">
-                        <img src="/img/projects/secreto.png" className="img-fluid shadow" alt="Secret Game" />
+                        <img src="img/projects/secreto.png" className="img-fluid shadow" alt="Secret Game" />
                     </div>
                 </div>
 

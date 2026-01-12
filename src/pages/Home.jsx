@@ -82,7 +82,7 @@ const Home = () => {
                         </div>
                         <div className="col-md-4 order-0 order-md-1 d-flex justify-content-md-end justify-content-center">
                             <div className="d-flex justify-content-end align-items-center profile">
-                                <img src="/img/Me.PNG" alt="Boris Hernández" />
+                                <img src="img/Me.PNG" alt="Boris Hernández" />
                                 <div className="bg-profile"></div>
                             </div>
                         </div>
@@ -101,107 +101,107 @@ const Home = () => {
                     </div>
                     <div className="technologies-grid mt-4">
                         <div className="tech-item">
-                            <img src="/img/logos/javascript.svg" alt="Javascript" className="tech-icon" />
+                            <img src="img/logos/javascript.svg" alt="Javascript" className="tech-icon" />
                             <p>Javascript</p>
                         </div>
 
                         <div className="tech-item">
-                            <img src="/img/logos/jquery.svg" alt="JQuery" className="tech-icon" />
+                            <img src="img/logos/jquery.svg" alt="JQuery" className="tech-icon" />
                             <p>JQuery</p>
                         </div>
 
                         <div className="tech-item">
-                            <img src="/img/logos/css.svg" alt="CSS" className="tech-icon" />
+                            <img src="img/logos/css.svg" alt="CSS" className="tech-icon" />
                             <p>CSS</p>
                         </div>
 
                         <div className="tech-item">
-                            <img src="/img/logos/sass.svg" alt="Sass/Scss" className="tech-icon" />
+                            <img src="img/logos/sass.svg" alt="Sass/Scss" className="tech-icon" />
                             <p>Sass/Scss</p>
                         </div>
 
                         <div className="tech-item">
-                            <img src="/img/logos/bootstrap.svg" alt="Bootstrap" className="tech-icon" />
+                            <img src="img/logos/bootstrap.svg" alt="Bootstrap" className="tech-icon" />
                             <p>Bootstrap</p>
                         </div>
 
                         <div className="tech-item">
-                            <img src="/img/logos/radzen.svg" alt="Radzen" className="tech-icon" />
+                            <img src="img/logos/radzen.svg" alt="Radzen" className="tech-icon" />
                             <p>Radzen</p>
                         </div>
 
                         <div className="tech-item">
-                            <img src="/img/logos/blazor.svg" alt="Blazor" className="tech-icon" />
+                            <img src="img/logos/blazor.svg" alt="Blazor" className="tech-icon" />
                             <p>Blazor</p>
                         </div>
 
                         <div className="tech-item">
-                            <img src="/img/logos/net.svg" alt="NET" className="tech-icon" />
+                            <img src="img/logos/net.svg" alt="NET" className="tech-icon" />
                             <p>.NET</p>
                         </div>
 
                         <div className="tech-item">
-                            <img src="/img/logos/c.svg" alt="C#" className="tech-icon" />
+                            <img src="img/logos/c.svg" alt="C#" className="tech-icon" />
                             <p>C#</p>
                         </div>
 
                         <div className="tech-item">
-                            <img src="/img/logos/typescript.svg" alt="TypeScript" className="tech-icon" />
+                            <img src="img/logos/typescript.svg" alt="TypeScript" className="tech-icon" />
                             <p>TypeScript</p>
                         </div>
 
                         <div className="tech-item">
-                            <img src="/img/logos/react.svg" alt="React" className="tech-icon" />
+                            <img src="img/logos/react.svg" alt="React" className="tech-icon" />
                             <p>React</p>
                         </div>
 
                         <div className="tech-item">
-                            <img src="/img/logos/angular.png" alt="Angular" className="tech-icon" />
+                            <img src="img/logos/angular.png" alt="Angular" className="tech-icon" />
                             <p>Angular</p>
                         </div>
 
                         <div className="tech-item">
-                            <img src="/img/logos/java.svg" alt="Java" className="tech-icon" />
+                            <img src="img/logos/java.svg" alt="Java" className="tech-icon" />
                             <p>Java</p>
                         </div>
 
                         <div className="tech-item">
-                            <img src="/img/logos/springboot.svg" alt="Springboot" className="tech-icon" />
+                            <img src="img/logos/springboot.svg" alt="Springboot" className="tech-icon" />
                             <p>Springboot</p>
                         </div>
 
                         <div className="tech-item">
-                            <img src="/img/logos/mysql.svg" alt="MySQL" className="tech-icon" />
+                            <img src="img/logos/mysql.svg" alt="MySQL" className="tech-icon" />
                             <p>MySQL</p>
                         </div>
 
                         <div className="tech-item">
-                            <img src="/img/logos/postgresql.svg" alt="PostgreSQL" className="tech-icon" />
+                            <img src="img/logos/postgresql.svg" alt="PostgreSQL" className="tech-icon" />
                             <p>PostgreSQL</p>
                         </div>
 
                         <div className="tech-item">
-                            <img src="/img/logos/git.svg" alt="Git" className="tech-icon" />
+                            <img src="img/logos/git.svg" alt="Git" className="tech-icon" />
                             <p>Git</p>
                         </div>
 
                         <div className="tech-item">
-                            <img src="/img/logos/figma.svg" alt="Figma" className="tech-icon" />
+                            <img src="img/logos/figma.svg" alt="Figma" className="tech-icon" />
                             <p>Figma</p>
                         </div>
 
                         <div className="tech-item">
-                            <img src="/img/logos/canva.svg" alt="Canva" className="tech-icon" />
+                            <img src="img/logos/canva.svg" alt="Canva" className="tech-icon" />
                             <p>Canva</p>
                         </div>
 
                         <div className="tech-item">
-                            <img src="/img/logos/photoshop.svg" alt="Photoshop" className="tech-icon" />
+                            <img src="img/logos/photoshop.svg" alt="Photoshop" className="tech-icon" />
                             <p>Photoshop</p>
                         </div>
 
                         <div className="tech-item">
-                            <img src="/img/logos/ilustrador.svg" alt="Illustrator" className="tech-icon" />
+                            <img src="img/logos/ilustrador.svg" alt="Illustrator" className="tech-icon" />
                             <p>Illustrator</p>
                         </div>
                     </div>
@@ -236,7 +236,7 @@ const Home = () => {
                         <div className="card">
                             <div className="w-md-25 order-0">
                                 <div className="logos-wrapper">
-                                    <img src="/img/logos/bitworks.png" alt="Bitworks" />
+                                    <img src="img/logos/bitworks.png" alt="Bitworks" />
                                 </div>
                             </div>
                             <div className="d-flex flex-column gap-3 w-md-50 order-2 order-md-1">
@@ -256,9 +256,9 @@ const Home = () => {
                         <div className="card">
                             <div className="d-flex w-md-25 order-0">
                                 <div className="h-fit gap-3 logos-wrapper">
-                                    <img src="/img/logos/att.png" className="callcenter" alt="AT&T" />
+                                    <img src="img/logos/att.png" className="callcenter" alt="AT&T" />
                                     <div className="horizontal-divider"></div>
-                                    <img src="/img/logos/tp.png" className="tp" alt="Teleperformance" />
+                                    <img src="img/logos/tp.png" className="tp" alt="Teleperformance" />
                                 </div>
                             </div>
                             <div className="d-flex flex-column gap-3 w-md-50 order-2 order-md-1">
@@ -278,9 +278,9 @@ const Home = () => {
                         <div className="card">
                             <div className="d-flex w-md-25 order-0">
                                 <div className="h-fit gap-3 logos-wrapper">
-                                    <img src="/img/logos/cricket.png" className="callcenter" alt="Cricket Wireless" />
+                                    <img src="img/logos/cricket.png" className="callcenter" alt="Cricket Wireless" />
                                     <div className="horizontal-divider"></div>
-                                    <img src="/img/logos/tp.png" className="tp" alt="Teleperformance" />
+                                    <img src="img/logos/tp.png" className="tp" alt="Teleperformance" />
                                 </div>
                             </div>
                             <div className="d-flex flex-column gap-3 w-md-50 order-2 order-md-1">

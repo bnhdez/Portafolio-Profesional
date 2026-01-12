@@ -11,15 +11,15 @@ const MueblesCorp = () => {
             <div className="max-80 mx-auto px-3">
                 <div className="row gap-6 d-flex justify-content-around">
                     <div className="col-md-3 d-flex align-items-center justify-content-center">
-                        <img src="/img/projects/MueblesCorpMobile.png" className="img-fluid shadow" alt="Muebles Mobile" />
+                        <img src="img/projects/MueblesCorpMobile.png" className="img-fluid shadow" alt="Muebles Mobile" />
                     </div>
                     <div className="col-md-6 d-flex align-items-center justify-content-center">
                         <div className="row gap-md-4">
                             <div className="col-md-12 col-6">
-                                <img src="/img/projects/muebles.png" className="img-fluid shadow" alt="Muebles Corp" />
+                                <img src="img/projects/muebles.png" className="img-fluid shadow" alt="Muebles Corp" />
                             </div>
                             <div className="col-md-12 col-6">
-                                <img src="/img/projects/MueblesCorpContact.png" className="img-fluid shadow" alt="Muebles Corp Contact" />
+                                <img src="img/projects/MueblesCorpContact.png" className="img-fluid shadow" alt="Muebles Corp Contact" />
                             </div>
                         </div>
                     </div>

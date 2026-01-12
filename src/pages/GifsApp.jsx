@@ -11,10 +11,10 @@ const GifsApp = () => {
             <div className="max-80 mx-auto px-3">
                 <div className="row gap-4 gap-md-0 d-flex justify-content-around">
                     <div className="col-md-6 d-flex align-items-center justify-content-center">
-                        <img src="/img/projects/gifs.png" className="img-fluid shadow" alt="GifsApp" />
+                        <img src="img/projects/gifs.png" className="img-fluid shadow" alt="GifsApp" />
                     </div>
                     <div className="col-md-6 d-flex align-items-center justify-content-center">
-                        <img src="/img/projects/Gifs2.png" className="img-fluid shadow" alt="GifsApp" />
+                        <img src="img/projects/Gifs2.png" className="img-fluid shadow" alt="GifsApp" />
                     </div>
                 </div>
 

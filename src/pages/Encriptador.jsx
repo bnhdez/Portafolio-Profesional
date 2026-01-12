@@ -11,10 +11,10 @@ const Encriptador = () => {
             <div className="max-80 mx-auto px-3">
                 <div className="row gap-4 gap-md-0 d-flex justify-content-around">
                     <div className="col-md-6 d-flex align-items-center justify-content-center">
-                        <img src="/img/projects/encriptador.png" className="img-fluid shadow" alt="Encriptador" />
+                        <img src="img/projects/encriptador.png" className="img-fluid shadow" alt="Encriptador" />
                     </div>
                     <div className="col-md-6 d-flex align-items-center justify-content-center">
-                        <img src="/img/projects/encriptador2.png" className="img-fluid shadow" alt="Encriptador" />
+                        <img src="img/projects/encriptador2.png" className="img-fluid shadow" alt="Encriptador" />
                     </div>
                 </div>
 

@@ -13,20 +13,20 @@ const Wompi = () => {
                     <div className="col-md-6 d-flex align-items-center justify-content-center">
                         <div className="row row-cols-2">
                             <div className="col">
-                                <img src="/img/projects/wompi-login.png" className="img-fluid shadow" alt="Wompi Login" />
+                                <img src="img/projects/wompi-login.png" className="img-fluid shadow" alt="Wompi Login" />
                             </div>
                             <div className="col">
-                                <img src="/img/projects/wompi-mobile.png" className="img-fluid shadow" alt="Wompi Mobile" />
+                                <img src="img/projects/wompi-mobile.png" className="img-fluid shadow" alt="Wompi Mobile" />
                             </div>
                         </div>
                     </div>
                     <div className="col-md-6 d-flex align-items-center justify-content-center">
                         <div className="row gap-md-4">
                             <div className="col-md-12 col-6">
-                                <img src="/img/projects/wompi.png" className="img-fluid shadow" alt="Wompi" />
+                                <img src="img/projects/wompi.png" className="img-fluid shadow" alt="Wompi" />
                             </div>
                             <div className="col-md-12 col-6">
-                                <img src="/img/projects/wompi-registro.png" className="img-fluid shadow" alt="Wompi Register" />
+                                <img src="img/projects/wompi-registro.png" className="img-fluid shadow" alt="Wompi Register" />
                             </div>
                         </div>
                     </div>
