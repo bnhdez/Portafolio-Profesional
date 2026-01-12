@@ -48,6 +48,7 @@
 
 .text-bg-secondary {
     color: var(--app-gray-600) !important;
+    background-color: var(--app-gray-100) !important;
 }
 
 .bg-gray {
@@ -73,7 +74,8 @@
     left: 0;
     width: 100%;
     backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: var(--app-gray-default);
+    opacity: 0.9;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 

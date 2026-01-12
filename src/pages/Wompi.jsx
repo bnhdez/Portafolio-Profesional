@@ -1,6 +1,11 @@
 import React from 'react';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../utils/translations';
 
 const Wompi = () => {
+    const { language } = useLanguage();
+    const t = translations[language].wompi;
+
     return (
         <section className="wompi">
             <div className="max-80 mx-auto px-3">
@@ -29,19 +34,12 @@ const Wompi = () => {
 
                 <div className="row mt-5">
                     <div className="col-md-3">
-                        <h2>Wompi</h2>
+                        <h2>{t.title}</h2>
                     </div>
                     <div className="col-md-9">
-                        <p className="mb-2">En el proyecto <strong>Wompi</strong>, trabajé como desarrollador frontend en <strong>Bitworks</strong>, colaborando estrechamente con
-                            programadores backend para traer y desplegar datos en el frontend de manera dinámica. Mi rol principal consistía en
-                            implementar los diseños proporcionados por el equipo de <strong>Bancolombia</strong>, creados por un diseñador UX/UI en
-                            Figma. Una vez entregados, los convertía en código utilizando <strong>HTML</strong>, <strong>CSS</strong>, <strong>SASS</strong>, <strong>Bootstrap</strong>, y <strong>media queries</strong> para asegurar una correcta visualización en distintos dispositivos.</p>
+                        <p className="mb-2" dangerouslySetInnerHTML={{ __html: t.p1 }}></p>
 
-                        <p className="mb-2">Además, implementaba alertas con <strong>SweetAlert</strong> para mejorar la experiencia del usuario y gestionaba notificaciones
-                            por correo electrónico utilizando plantillas <strong>SendGrid</strong>. Todos mis cambios eran revisados a través de pull
-                            requests para asegurar la calidad y el cumplimiento de los estándares de diseño establecidos por el equipo de
-                            Wompi. Durante el proyecto, siempre respeté las iconografías y directrices originales del equipo de <strong>Bancolombia</strong>
-                            para mantener la coherencia con la marca.</p>
+                        <p className="mb-2" dangerouslySetInnerHTML={{ __html: t.p2 }}></p>
                         <a href="https://wompi.sv/" target="_blank" rel="noreferrer"><i className="icon-external"></i></a>
                     </div>
                 </div>

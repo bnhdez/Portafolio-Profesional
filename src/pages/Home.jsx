@@ -1,27 +1,17 @@
 import React, { useEffect } from 'react';
 import ContactForm from '../components/ContactForm';
 import ProjectCarousel from '../components/ProjectCarousel';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../utils/translations';
 
 const Home = () => {
+    const { language } = useLanguage();
+    const t = translations[language].home;
 
     useEffect(() => {
         // Handle clipboard copy logic
         const copyBtns = document.querySelectorAll('.copy-btn');
         const toastEl = document.getElementById('copyToast');
-        // We assume bootstrap is loaded via npm package import in main.jsx
-        // However, we might need to import Toast from bootstrap to use it programmatically if we want to be safe,
-        // or rely on window.bootstrap if it's attached.
-        // Since we imported 'bootstrap/dist/js/bootstrap.bundle.min.js', window.bootstrap should be available or we can import it.
-
-        // Let's use dynamic import or assume it's global if we want to use the JS API.
-        // But importing 'bootstrap' in main.jsx usually attaches it to window? No, not always in module systems.
-        // It's better to import Toast from bootstrap.
-
-        // However, for simplicity and ensuring it works like legacy, I'll rewrite the logic using React state if possible,
-        // OR just simple DOM manipulation if I want to keep it "legacy-like".
-        // But the "correct" React way is to use a state for the toast.
-
-        // Let's use a simple DOM approach for now as it's easier to port from existing script.
 
         const handleCopy = async (e) => {
             const btn = e.currentTarget;
@@ -30,22 +20,10 @@ const Home = () => {
             try {
                 await navigator.clipboard.writeText(textToCopy);
 
-                // Show toast
-                // We need to import Toast from bootstrap.
-                // Since I cannot easily import it here without potentially increasing bundle size or configuration issues,
-                // I will try to access it from window if available, or just use a simple state based toast.
-
-                // Let's implement a simple React Toast component or just toggle a class.
-                // But the HTML structure has a toast container.
-
-                // Let's use the window.bootstrap if available (it might be if I assigned it in main).
-                // If not, I'll fallback to a simple visibility toggle.
-
                 if (window.bootstrap) {
                     const toast = new window.bootstrap.Toast(toastEl);
                     toast.show();
                 } else {
-                    // Fallback manual show
                     toastEl.classList.add('show');
                     setTimeout(() => toastEl.classList.remove('show'), 2500);
                 }
@@ -71,26 +49,22 @@ const Home = () => {
                         <div className="col-md-7 order-1 order-md-0">
                             <div className="d-flex flex-column gap-4">
                                 <div className="d-flex flex-column gap-2">
-                                    <h1>Hola, soy Boris</h1>
+                                    <h1>{t.intro.title}</h1>
                                     <p className="mb-3">
-                                        Soy un Frontend Developer con pasión por el diseño web y la creación de interfaces interactivas y responsivas. Con
-                                        experiencia en React.js, Angular, TypeScript y .NET, me especializo en desarrollar soluciones eficientes y atractivas
-                                        para la web. Actualmente, formo parte de Bitworks, donde he trabajado en el rediseño de plataformas digitales
-                                        innovadoras.
+                                        {t.intro.p1}
                                     </p>
                                     <p>
-                                        Me encanta combinar la creatividad con la tecnología, aplicando metodologías ágiles (Scrum) y las mejores prácticas de
-                                        desarrollo para llevar cada proyecto al siguiente nivel.
+                                        {t.intro.p2}
                                     </p>
                                 </div>
                                 <div className="d-flex flex-column gap-2">
                                     <div className="d-flex gap-2">
                                         <i className="icon-location"></i>
-                                        <p >Santa Tecla, El Salvador</p>
+                                        <p >{t.intro.location}</p>
                                     </div>
                                     <div className="d-flex gap-2 ms-1">
                                         <i className="icon-dot text-success" style={{fontSize: '0.625rem'}}></i>
-                                        <p>Disponible para nuevos proyectos</p>
+                                        <p>{t.intro.availability}</p>
                                     </div>
                                 </div>
                                 <div className="d-flex gap-2">
@@ -121,9 +95,9 @@ const Home = () => {
                 <div className="max-80 mx-auto px-3">
                     <div className="d-flex flex-column gap-3 align-items-center justify-content-center">
                         <span className="badge text-bg-secondary">
-                            <p>Tecnologias</p>
+                            <p>{t.tech.badge}</p>
                         </span>
-                        <p className="text-center" style={{maxWidth: '26rem'}}>Estas son las herramientas y tecnologías en las que tengo experiencia y dominio:</p>
+                        <p className="text-center" style={{maxWidth: '26rem'}}>{t.tech.desc}</p>
                     </div>
                     <div className="technologies-grid mt-4">
                         <div className="tech-item">
@@ -239,9 +213,9 @@ const Home = () => {
                 <div className="max-80 mx-auto px-3">
                     <div className="d-flex flex-column gap-3 align-items-center justify-content-center">
                         <span className="badge text-bg-secondary">
-                            <p>Proyectos</p>
+                            <p>{t.projects.badge}</p>
                         </span>
-                        <p className="text-center">Algunos de los proyectos notables que he construido:</p>
+                        <p className="text-center">{t.projects.desc}</p>
                     </div>
                     <ProjectCarousel />
                 </div>
@@ -252,31 +226,31 @@ const Home = () => {
                 <div className="max-80 mx-auto px-3">
                     <div className="d-flex flex-column gap-3 align-items-center justify-content-center">
                         <span className="badge text-bg-secondary">
-                            <p>Experiencia</p>
+                            <p>{t.experience.badge}</p>
                         </span>
-                        <p className="text-center mb-4" style={{maxWidth: '26rem'}}>A continuación, un vistazo rápido a mis experiencias más recientes:</p>
+                        <p className="text-center mb-4" style={{maxWidth: '26rem'}}>{t.experience.desc}</p>
                     </div>
                     <div className="d-flex flex-column gap-5">
+
+                        {/* Bitworks */}
                         <div className="card">
                             <div className="w-md-25 order-0">
                                 <img src="/img/logos/bitworks.png" alt="Bitworks" />
                             </div>
                             <div className="d-flex flex-column gap-3 w-md-50 order-2 order-md-1">
-                                <h5>Diseñador Web</h5>
+                                <h5>{t.experience.jobs[0].role}</h5>
                                 <ul>
-                                    <li>Responsable del diseño y desarrollo de interfaces web responsivas en el frontend.</li>
-                                    <li>Colaboro con equipos de backend bajo la metodología Scrum, completando tareas asignadas a través de sprints semanales y
-                                    reuniones diarias.</li>
-                                    <li>Mantenimiento y optimización de sitios web existentes, agregando nuevas funcionalidades o corrigiendo errores según
-                                    fuera necesario.</li>
-                                    <li>Trabajar en equipo con otros desarrolladores en un entorno Ágil.</li>
+                                    {t.experience.jobs[0].desc.map((item, index) => (
+                                        <li key={index}>{item}</li>
+                                    ))}
                                 </ul>
                             </div>
                             <div className="w-md-25 order-1 order-md-2">
-                                <p className="text-md-end">Jul 2024 - Presente</p>
+                                <p className="text-md-end">{t.experience.jobs[0].date}</p>
                             </div>
                         </div>
 
+                        {/* AT&T */}
                         <div className="card">
                             <div className="d-flex w-md-25 order-0">
                                 <div className="d-flex align-items-center justify-content-start h-fit gap-3">
@@ -286,18 +260,19 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className="d-flex flex-column gap-3 w-md-50 order-2 order-md-1">
-                                <h5>Customer Service Agent</h5>
+                                <h5>{t.experience.jobs[1].role}</h5>
                                 <ul>
-                                    <li>Gestión de información personal y resolución de problemas de conectividad y redes.</li>
-                                    <li>Atendí consultas y quejas telefónicas siguiendo los procedimientos operativos estándar.</li>
-                                    <li>Brindé información sobre productos a los clientes, respondiendo sus preguntas y resolviendo sus inquietudes</li>
+                                    {t.experience.jobs[1].desc.map((item, index) => (
+                                        <li key={index}>{item}</li>
+                                    ))}
                                 </ul>
                             </div>
                             <div className="w-md-25 order-1 order-md-2">
-                                <p className="text-md-end">Jun 2022 - Dic 2022</p>
+                                <p className="text-md-end">{t.experience.jobs[1].date}</p>
                             </div>
                         </div>
 
+                        {/* Cricket */}
                         <div className="card">
                             <div className="d-flex w-md-25 order-0">
                                 <div className="d-flex align-items-center justify-content-start h-fit gap-3">
@@ -307,16 +282,15 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className="d-flex flex-column gap-3 w-md-50 order-2 order-md-1">
-                                <h5>Customer Service Agent</h5>
+                                <h5>{t.experience.jobs[2].role}</h5>
                                 <ul>
-                                    <li>Desarrollé sólidas habilidades de comunicación al interactuar con clientes de diversos antecedentes</li>
-                                    <li>Apliqué técnicas de resolución de problemas para abordar y solucionar rápidamente las quejas de los clientes de manera
-                                    profesional.</li>
-                                    <li>Procesé pagos de manera eficiente, proporcionando recibos detallados a los clientes.</li>
+                                    {t.experience.jobs[2].desc.map((item, index) => (
+                                        <li key={index}>{item}</li>
+                                    ))}
                                 </ul>
                             </div>
                             <div className="w-md-25 order-1 order-md-2">
-                                <p className="text-md-end">Nov 2020 - Ene 2021</p>
+                                <p className="text-md-end">{t.experience.jobs[2].date}</p>
                             </div>
                         </div>
                     </div>
@@ -328,10 +302,9 @@ const Home = () => {
                 <div className="max-80 mx-auto px-3">
                     <div className="d-flex flex-column gap-3 align-items-center justify-content-center">
                         <span className="badge text-bg-secondary">
-                            <p>Contacto</p>
+                            <p>{t.contact.badge}</p>
                         </span>
-                        <p className="text-center mb-4" style={{maxWidth: '44rem'}}>No dudes en comunicarte conmigo si estás buscando un desarrollador, tienes alguna consulta o simplemente quieres
-                        conectarte.</p>
+                        <p className="text-center mb-4" style={{maxWidth: '44rem'}}>{t.contact.desc}</p>
                     </div>
                     <div className="row justify-content-center gap-md-4">
                         <div className="col-md-6 d-flex justify-content-center align-items-center">
@@ -352,7 +325,7 @@ const Home = () => {
                                             <i className="icon-mail" style={{fontSize: '1.5rem'}}></i>
                                             <h2 className="m-0">borisnandez93@gmail.com</h2>
                                             <button className="btn btn-transparent copy-btn p-0" data-copy="borisnandez93@gmail.com">
-                                                <i class="icon-copy"></i>
+                                                <i className="icon-copy"></i>
                                             </button>
                                         </div>
                                     </div>
@@ -368,7 +341,7 @@ const Home = () => {
                                 </div>
 
                                 <div className="d-none d-md-flex flex-column align-items-center contact-socials gap-3">
-                                    <p>Visita mis otras redes sociales!</p>
+                                    <p>{t.contact.socials}</p>
                                     <div className="d-flex gap-2">
                                         <a className="btn btn-transparent p-0" target="_blank" href="https://www.bento.me/bor1s" rel="noreferrer">
                                             <i className="icon-cuenta-de-usuario"></i>
@@ -385,7 +358,7 @@ const Home = () => {
                             <ContactForm />
 
                             <div className="d-flex d-md-none flex-column align-items-center contact-socials mt-4 gap-3">
-                                <p>Visita mis otras redes sociales!</p>
+                                <p>{t.contact.socials}</p>
                                 <div className="d-flex gap-2">
                                     <a className="btn btn-transparent p-0" href="https://www.bento.me/bor1s" rel="noreferrer">
                                         <i className="icon-cuenta-de-usuario"></i>
@@ -405,7 +378,7 @@ const Home = () => {
                     aria-atomic="true" data-bs-delay="2500" data-bs-autohide="true">
                     <div className="d-flex">
                         <div className="toast-body">
-                            ¡Copiado al portapapeles!
+                            {t.contact.toast}
                         </div>
                     </div>
                 </div>
