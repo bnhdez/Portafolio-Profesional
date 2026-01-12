@@ -1,0 +1,162 @@
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+// @import 'bootstrap/scss/mixins'; // mixins are already imported in bootstrap.scss
+
+//custom
+@import 'bootstrap-custom';
+@import 'global';
+@import 'splide';
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: $gray-200;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding: var(--scroll-padding, 5rem);
+}
+
+body, html {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-style: normal;
+    color: var(--app-gray-600);
+    background-color: var(--app-gray-default);
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--app-gray-900);
+}
+
+a{
+    color: var(--app-gray-600);
+}
+
+h1{
+    line-height: 4.5rem;
+    font-size: 3.75rem;
+    font-weight: 700;
+    letter-spacing: -.02em;
+
+    @media (max-width:769px){
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+        font-weight: 600;
+    }
+}
+
+h2{
+    line-height: 2.5rem;
+    font-size: 2.25rem;
+    font-weight: 600;
+    letter-spacing: -.02em;
+
+    @media (max-width:769px){
+        line-height: 1.75rem;
+        font-size: 1.125rem;
+    }
+}
+
+h3{
+    line-height: 1.875rem;
+    font-size: 2.25rem;
+    font-weight: 500;
+    letter-spacing: -.02em;
+}
+
+h5{
+    line-height: 1.75rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--app-gray-900);
+}
+
+i{
+    color: var(--app-gray-600);
+
+    &::before{
+        width: auto !important;
+        height: auto !important;
+        line-height: 1.5rem !important;
+    }
+}
+
+ol,ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    a{
+        text-decoration: none;
+    }
+
+    i{
+        font-size: 0.875rem;
+
+        &::before{
+            margin: 0;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+    }
+}
+
+@media (max-width:769px){
+    header{
+        border-bottom: 1px solid $gray-100;
+    }
+}
+
+section{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    @media (max-width:769px){
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+
+p{
+    margin-bottom: 0;
+}
+
+footer{
+    background-color: var(--app-gray-50);
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    .horizontal-divider{
+        color: var(--app-gray-600);
+        height: 1rem;
+    }
+}
+
+.video {
+    iframe {
+        border-radius: 8px;
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+ul{
+    list-style: disc;
+    color: var(--app-gray-600);
+}
