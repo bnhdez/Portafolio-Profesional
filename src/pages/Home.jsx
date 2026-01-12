@@ -82,7 +82,7 @@ const Home = () => {
                         </div>
                         <div className="col-md-4 order-0 order-md-1 d-flex justify-content-md-end justify-content-center">
                             <div className="d-flex justify-content-end align-items-center profile">
-                                <img src="/img/profile.jpg" alt="profile" />
+                                <img src="/img/Me.PNG" alt="Boris Hernández" />
                                 <div className="bg-profile"></div>
                             </div>
                         </div>

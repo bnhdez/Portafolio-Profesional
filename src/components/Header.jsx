@@ -9,6 +9,9 @@ const Header = () => {
     const { theme, toggleTheme } = useTheme();
     const { language, toggleLanguage } = useLanguage();
     const t = translations[language].header;
+    const cvPath = language === 'EN' 
+        ? "/files/BorisHernandez-CV-EN.pdf" 
+        : "/files/BorisHernandez-CV.pdf";
 
     return (
         <header className="navbar navbar-expand-lg bd-navbar sticky-top p-0">
@@ -50,7 +53,7 @@ const Header = () => {
 
                     <div className="horizontal-divider"></div>
 
-                    <a href="/files/BorisHernandez-CV.pdf" download className="btn btn-dark">
+                    <a href={cvPath} download className="btn btn-dark">
                         {t.downloadCV}
                     </a>
                 </div>
