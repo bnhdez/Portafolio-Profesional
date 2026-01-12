@@ -47,11 +47,12 @@
 }
 
 .text-bg-secondary {
-    color: $gray-600 !important;
+    color: var(--app-gray-600) !important;
+    background-color: var(--app-gray-100) !important;
 }
 
 .bg-gray {
-    background-color: $gray-50;
+    background-color: var(--app-gray-50);
 }
 
 .card {
@@ -73,7 +74,8 @@
     left: 0;
     width: 100%;
     backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: var(--app-gray-default);
+    opacity: 0.9;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -86,9 +88,10 @@
         visibility: visible;
         transform: translateX(0);
         height: 100vh;
+        background-color: var(--app-gray-default);
 
         .offcanvas-header {
-            border-bottom: 1px solid $gray-100;
+            border-bottom: 1px solid var(--app-gray-100);
         }
 
         .offcanvas-body {

@@ -27,14 +27,14 @@
     background-color: transparent;
 
     svg{
-        fill: $gray-400;
+        fill: var(--app-gray-400);
     }
 }
 
 .splide__pagination__page{
-    background-color: $gray-400;
+    background-color: var(--app-gray-400);
 
     &.is-active{
-        background-color: $gray-600;
+        background-color: var(--app-gray-600);
     }
 }

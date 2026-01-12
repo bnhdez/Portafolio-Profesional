@@ -1,12 +1,14 @@
 import { Link, useLocation } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import { useTheme } from '../context/ThemeContext';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../utils/translations';
 
 const Header = () => {
     const location = useLocation();
-
-    // Helper to determine if we should use HashLink or regular Link
-    // If we are on home page, anchors #id work. If we are on other pages, we need HashLink to go to /#id
-    // Actually HashLink works for both cases usually if configured right.
+    const { theme, toggleTheme } = useTheme();
+    const { language, toggleLanguage } = useLanguage();
+    const t = translations[language].header;
 
     return (
         <header className="navbar navbar-expand-lg bd-navbar sticky-top p-0">
@@ -25,27 +27,31 @@ const Header = () => {
                 <div className="d-none d-lg-flex align-items-center gap-6">
                     <ul className="navbar-nav header-list gap-6">
                         <li>
-                            <HashLink to="/#projects">Proyectos</HashLink>
+                            <HashLink to="/#projects">{t.projects}</HashLink>
                         </li>
                         <li>
-                            <HashLink to="/#exp">Experiencia</HashLink>
+                            <HashLink to="/#exp">{t.experience}</HashLink>
                         </li>
                         <li>
-                            <HashLink to="/#contact">Contacto</HashLink>
+                            <HashLink to="/#contact">{t.contact}</HashLink>
                         </li>
                     </ul>
 
                     <div className="horizontal-divider"></div>
 
-                    {/* <div className="modes">
-                        <a href="">EN</a>
-                        <button type="button" className="btn btn-transparent"><i className="icon-night"></i></button>
+                    <div className="modes">
+                        <button type="button" className="btn btn-transparent p-0 fw-bold" onClick={toggleLanguage}>
+                            {language === 'ES' ? 'EN' : 'ES'}
+                        </button>
+                        <button type="button" className="btn btn-transparent" onClick={toggleTheme}>
+                            <i className={theme === 'dark' ? "icon-day" : "icon-night"}></i>
+                        </button>
                     </div>
 
-                    <div className="horizontal-divider"></div> */}
+                    <div className="horizontal-divider"></div>
 
                     <a href="/files/BorisHernandez-CV.pdf" download className="btn btn-dark">
-                        Descargar CV
+                        {t.downloadCV}
                     </a>
                 </div>
 
@@ -59,20 +65,22 @@ const Header = () => {
                     </div>
                     <div className="offcanvas-body d-flex flex-column gap-4">
                         <ul className="navbar-nav header-list">
-                            <li><HashLink className="nav-link" to="/#projects">Proyectos</HashLink></li>
-                            <li><HashLink className="nav-link" to="/#exp">Experiencia</HashLink></li>
-                            <li><HashLink className="nav-link" to="/#contact">Contacto</HashLink></li>
+                            <li><HashLink className="nav-link" to="/#projects">{t.projects}</HashLink></li>
+                            <li><HashLink className="nav-link" to="/#exp">{t.experience}</HashLink></li>
+                            <li><HashLink className="nav-link" to="/#contact">{t.contact}</HashLink></li>
                         </ul>
 
-                        {/* <div className="modes">
-                            <a href="">EN</a>
-                            <button type="button" className="btn btn-transparent">
-                                <i class="icon-night"></i>
+                        <div className="modes">
+                            <button type="button" className="btn btn-transparent p-0 fw-bold" onClick={toggleLanguage}>
+                                {language === 'ES' ? 'EN' : 'ES'}
                             </button>
-                        </div> */}
+                            <button type="button" className="btn btn-transparent" onClick={toggleTheme}>
+                                <i className={theme === 'dark' ? "icon-day" : "icon-night"}></i>
+                            </button>
+                        </div>
 
                         <a href="/files/BorisHernandez-CV.pdf" download className="btn btn-dark">
-                            Descargar CV
+                            {t.downloadCV}
                         </a>
                     </div>
                 </div>
