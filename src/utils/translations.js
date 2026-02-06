@@ -28,7 +28,7 @@ export const translations = {
                 jobs: [
                     {
                         company: "Bitworks",
-                        role: "Diseñador Web",
+                        role: "Desarrollador Frontend",
                         date: "Jul 2024 - Presente",
                         desc: [
                             "Responsable del diseño y desarrollo de interfaces web responsivas en el frontend.",
@@ -163,7 +163,7 @@ export const translations = {
                 jobs: [
                     {
                         company: "Bitworks",
-                        role: "Web Designer",
+                        role: "Frontend Developer",
                         date: "Jul 2024 - Present",
                         desc: [
                             "Responsible for the design and development of responsive web interfaces on the frontend.",
