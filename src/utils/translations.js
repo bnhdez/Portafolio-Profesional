@@ -93,6 +93,11 @@ export const translations = {
                 "Segundo lugar en el Certamen de Investigación e Innovación – Cátedra Ciclo II 2023, UEES."
             ]
         },
+        openStatus: {
+            title: "OpenStatus | Monitor de Infraestructura en Tiempo Real",
+            p1: "Una aplicación tipo SaaS diseñada para monitorear la disponibilidad y latencia de servicios web críticos en tiempo real. Presenta una interfaz moderna y responsiva estilo 'Bento Grid' que permite visualizar métricas de rendimiento mediante gráficos dinámicos, ofreciendo un diagnóstico inmediato del estado de la infraestructura (Online/Offline) con una experiencia de usuario fluida y estética cuidada.",
+            p2: "Desarrollado con una arquitectura moderna basada en <strong>React</strong> y <strong>Vite</strong>, estilizado con <strong>Tailwind CSS</strong> para implementar un sistema de diseño adaptable (Modo Claro/Oscuro). El backend utiliza <strong>Supabase</strong> para la gestión de base de datos en tiempo real y autenticación segura. El proyecto incluye optimización SEO técnica, scripts de automatización para el monitoreo y un flujo de despliegue continuo (CI/CD) en <strong>Vercel</strong> bajo un dominio personalizado con seguridad Cloudflare.",
+        },
         wompi: {
             title: "Wompi",
             p1: "En el proyecto <strong>Wompi</strong>, trabajé como desarrollador frontend en <strong>Bitworks</strong>, colaborando estrechamente con programadores backend para traer y desplegar datos en el frontend de manera dinámica. Mi rol principal consistía en implementar los diseños proporcionados por el equipo de <strong>Bancolombia</strong>, creados por un diseñador UX/UI en Figma. Una vez entregados, los convertía en código utilizando <strong>HTML</strong>, <strong>CSS</strong>, <strong>SASS</strong>, <strong>Bootstrap</strong>, y <strong>media queries</strong> para asegurar una correcta visualización en distintos dispositivos.",
@@ -222,6 +227,11 @@ export const translations = {
                 "First place in the Achievement Fair 2023, UEES. Category: Robotics - Version 2",
                 "Second place in the Research and Innovation Contest – Cycle II 2023, UEES."
             ]
+        },
+        openStatus: {
+            title: "OpenStatus | Real-Time Infrastructure Monitor",
+            p1: "A SaaS application designed to monitor the availability and latency of critical web services in real-time. It features a modern, responsive 'Bento Grid' interface that visualizes performance metrics through dynamic charts, providing immediate infrastructure status diagnostics (Online/Offline) with a seamless user experience and polished aesthetics.",
+            p2: "Developed with a modern architecture powered by <strong>React</strong> and <strong>Vite</strong>, and styled with <strong>Tailwind CSS</strong> to implement an adaptive design system (Light/Dark Mode). The backend leverages <strong>Supabase</strong> for real-time database management and secure authentication. The project includes technical SEO optimization, automated monitoring scripts, and a continuous deployment (CI/CD) pipeline on <strong>Vercel</strong>, hosted on a custom domain secured by Cloudflare.",
         },
         wompi: {
             title: "Wompi",

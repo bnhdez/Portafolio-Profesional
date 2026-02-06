@@ -3,6 +3,7 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import Robot from './pages/Robot';
+import OpenStatus from './pages/OpenStatus';
 import Wompi from './pages/Wompi';
 import MueblesCorp from './pages/MueblesCorp';
 import GifsApp from './pages/GifsApp';
@@ -22,6 +23,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/robot" element={<Robot />} />
+              <Route path="/open-status" element={<OpenStatus />} />
               <Route path="/wompi" element={<Wompi />} />
               <Route path="/muebles-corp" element={<MueblesCorp />} />
               <Route path="/gifs-app" element={<GifsApp />} />

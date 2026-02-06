@@ -27,6 +27,9 @@ const ProjectCarousel = () => {
                     <Link to="/robot"><img src="img/projects/robot.png" alt="Robot" /></Link>
                 </SplideSlide>
                 <SplideSlide>
+                    <Link to="/open-status"><img src="img/projects/open-status-1.png" alt="Robot" /></Link>
+                </SplideSlide>
+                <SplideSlide>
                     <Link to="/wompi"><img src="img/projects/wompi.png" alt="Wompi" /></Link>
                 </SplideSlide>
                 <SplideSlide>
